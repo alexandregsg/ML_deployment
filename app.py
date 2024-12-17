@@ -4,10 +4,6 @@ import pickle
 import streamlit as st
 import os
 
-# --- Set the Working Directory ---
-target_dir = "C:/Users/alexg/Ambiente de Trabalho/Mestrado Data Science NOVA IMS/1st semester/Machine Learning/Project_github/ML_Project_Group52/project/Deployment of the model"
-os.chdir(target_dir)
-
 # --- Load the Pipeline ---
 with open("trained_pipeline.pkl", "rb") as f:
     pipeline = pickle.load(f)
